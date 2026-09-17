@@ -4,6 +4,24 @@ Glow Space is a full-stack beauty salon website built with Laravel. It allows cu
 
 The project also includes an admin dashboard for managing the website’s content and customer requests.
 
+## Screenshots
+
+### Home Page
+
+![Glow Space Home Page](docs/screenshots/GShome-screenshot.png)
+
+### Services
+
+![Glow Space Services](docs/screenshots/services-screenshot.png)
+
+### Appointment Booking
+
+![Glow Space Appointment Booking](docs/screenshots/appointments-screenshot.png)
+
+### Admin Dashboard
+
+![Glow Space Admin Dashboard](docs/screenshots/dashboard-screenshot.png)
+
 ## Features
 
 - Responsive and elegant salon interface
