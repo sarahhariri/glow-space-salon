@@ -65,42 +65,22 @@
                                         class="status-form">
 
 
-                                   
-            
-
-
                                         <div class="dropdown">
                                             <button
                                                 class="btn status-dropdown dropdown-toggle status-{{ $appointment->status }}"
-                                                type="button" data-bs-toggle="dropdown">
-
+                                                type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                 {{ ucfirst($appointment->status) }}
                                             </button>
 
                                             <ul class="dropdown-menu luxury-status-menu">
-                                                <li>
-                                                    <button class="dropdown-item" data-status="pending">
-                                                        Pending
-                                                    </button>
-                                                </li>
-
-                                                <li>
-                                                    <button class="dropdown-item" data-status="confirmed">
-                                                        Confirmed
-                                                    </button>
-                                                </li>
-
-                                                <li>
-                                                    <button class="dropdown-item" data-status="completed">
-                                                        Completed
-                                                    </button>
-                                                </li>
-
-                                                <li>
-                                                    <button class="dropdown-item" data-status="cancelled">
-                                                        Cancelled
-                                                    </button>
-                                                </li>
+                                                @foreach (['pending', 'confirmed', 'completed', 'cancelled'] as $status)
+                                                    <li>
+                                                        <button type="submit" name="status"
+                                                            value="{{ $status }}" class="dropdown-item">
+                                                            {{ ucfirst($status) }}
+                                                        </button>
+                                                    </li>
+                                                @endforeach
                                             </ul>
                                         </div>
                                     </form>
